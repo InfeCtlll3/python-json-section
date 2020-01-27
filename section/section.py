@@ -7,10 +7,10 @@ def get_stdin():
     return input_list
 
 def find_opening_bracket(position, stdin_list):
-    for i in reversed(range(position-1)):
+    for i in reversed(range(position)):
         if "{" in stdin_list[i] and "}" not in stdin_list[i]:
             return i
-    return -1
+    raise Exception("Could not find opening bracket.")
 
 def has_brackets(sentence):
     sum = 0
