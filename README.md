@@ -9,7 +9,7 @@ This script only works for JSON at the moment and it brings the JSON section or 
 Use the package manager pip to install the package:
 
 ```bash
-pip install foobar
+pip install python-json-section
 ```
 
 or from source:
