@@ -9,7 +9,7 @@ This script only works for JSON at the moment and it brings the JSON section or 
 Use the package manager pip to install the package:
 
 ```bash
-pip install python-json-section
+pip install json-section
 ```
 
 or from source:
@@ -19,6 +19,23 @@ git clone https://github.com/InfeCtlll3/python-json-section.git
 cd python-json-section
 pip install -e .
 ```
+## Adding folder to the Path
+On linux systems, there is a chance that the directory ~/.local/bin is not included by default in your PATH. This directory is used for pip to create links for scripts and binaries. 
+
+In case it is not configured, you should receive the following message upon installing:
+```bash
+The script section is installed in '/home/<user>/.local/bin' which is not on PATH.
+```
+
+That said, in order to invoke the ```section``` command from your shell, you will need to add this directory to your PATH.
+
+On zsh:
+```bash
+path+=('/home/$USER/.local/bin')
+```
+
+On bash, please check [This Link](https://stackoverflow.com/questions/14637979/how-to-permanently-set-path-on-linux-unix) 
+
 
 ## Usage
 
